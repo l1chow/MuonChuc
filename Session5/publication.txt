@@ -1,0 +1,2 @@
+sach hay, 1.0, pages=1
+dai hay, 2.0, tape=2.0
