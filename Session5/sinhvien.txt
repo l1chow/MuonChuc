@@ -1,3 +1,0 @@
-SinhVienDien{ten=A, ngaySinh=1-2-2000, que=Ha Noi, nganh=Dien}
-SinhVienCo{ten=B, ngaySinh=2-2-2000, que=Hai Phong, nganh=Co}
-CuuSinhVien{ten=C, ngaySinh=3-2-2000, que=Thai Nguyen, namTotNghiep=2023}
