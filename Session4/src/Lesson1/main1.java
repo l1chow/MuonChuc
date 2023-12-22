@@ -1,6 +1,6 @@
 package Lesson1;
 
-public class main1 {
+public class Main1 {
     public static void main(String[] args) {
         Circle c1 = new Circle("GREEN", 5.2);
         Rectangle r1 = new Rectangle("PINK", 9, 2.3);

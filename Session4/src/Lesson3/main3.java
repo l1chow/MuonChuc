@@ -1,14 +1,23 @@
 package Lesson3;
 
-public class main3 {
-    public static void main(String[] args){
-        SinhVienDien d1 = new SinhVienDien("A", "1-2-2000", "Ha Noi", "Dien");
-        System.out.println(d1.toString());
+import java.text.*;
+
+public class Main3 {
+    public static DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+    
+    public static void main(String[] args) throws ParseException{
+        SinhVien[] sv = new SinhVien[] {
+            new SinhVienCo("Nguyen Van A", formatter.parse("01/01/2003"), "Ha Noi", "Sua o to", 8.8),
+            new SinhVienDien("Nguyen Van B", formatter.parse("01/02/2003"), "Hai Phong", "Sua dien", 9.9),
+            new CuuSinhVien("Nguyen Van C", formatter.parse("01/03/2003"), "Thai Nguyen", "Sua tau", true),
+            new CuuSinhVien("Nguyen Van D", formatter.parse("01/04/2003"), "Phu Tho", "Sua tivi", false)
+
+        };
         
-        SinhVienCo d2 = new SinhVienCo("B", "2-2-2000", "Hai Phong", "Co");
-        System.out.println(d2.toString());
+        for (SinhVien x : sv) {
+            x.showInfo();
+        }
         
-        CuuSinhVien d3 = new CuuSinhVien("C", "3-2-2000", "Thai Nguyen", 2023);
-        System.out.println(d3.toString());
     }
+        
 }

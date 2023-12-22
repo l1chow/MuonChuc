@@ -1,6 +1,6 @@
 package Lesson2;
 
-public class main2 {
+public class Main2 {
     public static void main(String[] args) {
         Book b1 = new Book();
         Audiocassette a1 = new Audiocassette();

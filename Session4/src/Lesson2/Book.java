@@ -17,11 +17,7 @@ public class Book extends Publication{
     public void getData() {
         super.getData();
         System.out.print("Input numbers of page: ");
-        try {
-            pages = new Scanner(System.in).nextInt();
-        } catch (Exception e) {
-            System.out.println("Enter only numbers!");
-        }
+        pages = new Scanner(System.in).nextInt();
     }
     
     @Override

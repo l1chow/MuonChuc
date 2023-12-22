@@ -1,29 +1,36 @@
 package Lesson3;
 
-public class SinhVien {
-    private String ten;
-    private String ngaySinh;
-    private String que;
-    
-    public SinhVien(String ten, String ngaySinh, String que){
+import java.util.Date;
+
+public abstract class SinhVien {
+    protected String ten;
+    protected Date ngaySinh;
+    protected String que;
+    protected String nganh;
+
+    public SinhVien() {
+    }
+
+    public SinhVien(String ten, Date ngaySinh, String que, String nganh) {
         this.ten = ten;
         this.ngaySinh = ngaySinh;
         this.que = que;
+        this.nganh = nganh;
     }
-    
-    public String getTen(){
+
+    public String getTen() {
         return ten;
     }
-    
-    public void setTen(String ten){
+
+    public void setTen(String ten) {
         this.ten = ten;
     }
 
-    public String getNgaySinh() {
+    public Date getNgaySinh() {
         return ngaySinh;
     }
 
-    public void setNgaySinh(String ngaySinh) {
+    public void setNgaySinh(Date ngaySinh) {
         this.ngaySinh = ngaySinh;
     }
 
@@ -35,9 +42,13 @@ public class SinhVien {
         this.que = que;
     }
 
-    @Override
-    public String toString() {
-        return "SinhVien{" + "ten=" + ten + ", ngaySinh=" + ngaySinh + ", que=" + que + '}';
+    public String getNganh() {
+        return nganh;
     }
-    
+
+    public void setNganh(String nganh) {
+        this.nganh = nganh;
+    }
+
+    public abstract void showInfo();
 }

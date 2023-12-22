@@ -19,11 +19,7 @@ public class Publication {
         System.out.print("Input publication name: ");
         name = sc.nextLine();
         System.out.print("Input publication price: ");
-        try {
-            price = sc.nextDouble();
-        } catch (Exception e) {
-            System.out.println("Enter only numbers!");
-        }
+        price = sc.nextDouble();
     }
     
     public String putData() {

@@ -17,11 +17,7 @@ public class Audiocassette extends Publication{
     public void getData(){
         super.getData();
         System.out.print("Input a playing time: ");
-        try {
-            tape = new Scanner(System.in).nextDouble();
-        } catch (Exception e) {
-            System.out.println("Enter only numbers!");
-        }
+        tape = new Scanner(System.in).nextDouble();
     }
             
     @Override
