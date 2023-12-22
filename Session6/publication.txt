@@ -1,0 +1,4 @@
+book1$10.0$pages=10
+audio1$20.0$tape=20.0
+book2$30.0$pages=30
+book3$30.0$pages=30
