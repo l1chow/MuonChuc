@@ -1,4 +1,0 @@
-a, 10/10/1111, 1, 1, 1.0, false
-nguyen van a, 01/01/2000, hn, Điện, 1.0, true
-nguyen van b, 01/02/2000, hp, Điện, 2.0, false
-nva, 01/03/2000, pt, Điện, 5.0, false
